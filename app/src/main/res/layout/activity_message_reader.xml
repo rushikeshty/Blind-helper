@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message.MessageReader">
+
+        <TextView
+            android:id="@+id/list_textview"
+            android:layout_width="match_parent"
+            android:layout_height="551dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Inbox Messages"
+            android:textSize="34sp" />
+
+        <ListView
+            android:id="@+id/messageList"
+            android:layout_width="407dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="4dp"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:dividerHeight="6dp"
+            android:listSelector="@android:color/transparent" />
+
+
+</RelativeLayout>

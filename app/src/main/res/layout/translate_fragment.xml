@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/textInputLayout"
+         android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/sourceLangSelector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/sourceText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:visibility="gone"
+            android:hint="@string/source_text_hint" />
+
+
+    <Spinner
+        android:id="@+id/sourceLangSelector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/buttonSyncSource"
+        app:layout_constraintEnd_toStartOf="@id/buttonSwitchLang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <Button
+        android:id="@+id/buttonSwitchLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="text"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/targetLangSelector"
+        app:layout_constraintStart_toEndOf="@+id/sourceLangSelector"
+        app:layout_constraintTop_toTopOf="@id/sourceLangSelector" />
+
+    <Spinner
+        android:id="@+id/targetLangSelector"
+        android:layout_width="384dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/sourceLangSelector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonSwitchLang"
+        app:layout_constraintTop_toTopOf="@id/sourceLangSelector" />
+
+    <ToggleButton
+        android:id="@+id/buttonSyncSource"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:textOff="@string/download_model"
+        android:textOn="@string/delete_model"
+        android:textSize="11sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/downloadedModels"
+        app:layout_constraintEnd_toEndOf="@+id/sourceLangSelector"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/sourceLangSelector"
+        app:layout_constraintTop_toBottomOf="@id/sourceLangSelector" />
+
+    <ToggleButton
+        android:id="@+id/buttonSyncTarget"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textOff="@string/download_model"
+        android:textOn="@string/delete_model"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/downloadedModels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/downloaded_models_label" />
+
+    <TextView
+        android:id="@+id/targetText"
+        android:layout_width="419dp"
+        android:layout_height="556dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textIsSelectable="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:gravity="top"
+        android:hint="@string/translated_text_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downloadedModels" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="482dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center" />
+</RelativeLayout>

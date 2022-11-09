@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name" translation_description="Blind Helper">Advanced Blind Helper</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="speech_prompt">say hello</string>
+    <string name="speech_not_supported">not supported</string>
+    <string name="editText_hint">Enter city name</string>
+    <string name="weather_img">weather image</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="batter_percentage">battery</string>
+    <string name="translated_text_hint">Translated text</string>
+    <string name="downloaded_models_label">Downloaded models: %1$s</string>
+    <string name="translate_progress">Translating&#8230;</string>
+    <string name="delete_model">Delete Model</string>
+    <string name="download_model">Download Model</string>
+    <string name="unknown_error">Unknown error occurred.</string>
+    <string name="source_text_hint">Source text</string>
+
+
+    <string name="dummy_content">
+
+        Swipe Up/Down to Select\n\n
+        Double-Tap to Confirm \n\n
+        Long Press to Undo
+
+
+    </string>
+    <string name="title_activity_tabcall">Tabcall</string>
+    <string name="tab_text_1">Voice calling</string>
+    <string name="tab_text_2">touch calling</string>
+</resources>

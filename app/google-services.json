@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "507169014846",
+    "project_id": "rushi2345",
+    "storage_bucket": "rushi2345.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507169014846:android:84c00338714784332b3d6f",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.detection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507169014846-t7t405b7lhrvk83cbc0ba2cde6655qcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIkzRt38hpAZLegOK0V2HGPwOG0gNz_Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507169014846-t7t405b7lhrvk83cbc0ba2cde6655qcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
